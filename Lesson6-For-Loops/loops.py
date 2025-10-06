@@ -37,14 +37,18 @@ char = ''
 username = input("Enter your username:")
 has_number = False
 has_uppercase = False
-total_characters = len(username)
+total_chars = len(username)
 
 for char in username:
     if 'A' <= char <= 'Z':
         has_uppercase = True
     if '0' <= char <= '9':
         has_number = True
-    
+
+print(f"Username: {username}")
+print(f"Total Characters: {total_chars}")
+print(f"Has Number: {has_number}")
+print(f"Has Uppercase: {has_uppercase}")
 # PART 3: QUICK PRACTICE - Counting 'e'
 # =====================================
 # Count how many times the letter 'e' appears (case-insensitive)
