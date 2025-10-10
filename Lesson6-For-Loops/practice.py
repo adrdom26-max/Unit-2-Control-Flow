@@ -41,3 +41,6 @@
 text = "abc123xyz456"
 numbers = ''
 for char in text:
+    if '0' <= char <= '9':
+        numbers += char
+print(numbers)
