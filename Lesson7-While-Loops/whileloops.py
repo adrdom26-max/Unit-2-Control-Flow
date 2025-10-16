@@ -30,9 +30,59 @@
 # print(result)
 
 # Age Validator
-age = -1
-while age < 0 or age > 120:
-    age = int(input("Enter Your Age: "))
-    if age < 0 or age > 120:
-        print("Invalid!")
-print(f"Your age is {age}")
+# age = -1
+# while age < 0 or age > 120:
+#     age = int(input("Enter Your Age: "))
+#     if age < 0 or age > 120:
+#         print("Invalid!")
+# print(f"Your age is {age}")
+
+# Break
+
+# while True:
+#     answer = input("Continue? ")
+#     if answer == "no":
+#         break
+#     print("Going ... ")
+
+# print("Done!")
+
+# Continue Statement
+
+# count = 0 
+# while count < 5:
+#     count += 1
+#     if count == 3:
+#         continue # skips over 3
+#     print(count)
+
+# number = 7 
+# while True:
+#     guess = int(input("Pick a number: "))
+#     if guess < 7:
+#         print("Higher")
+#         continue
+#     elif guess > 7:
+#         print("Lower")
+#         continue
+#     else:
+#         print("Correct")
+#         break
+
+total = 0
+while True:
+    number = int(input("Pick a number "))
+    if number < 0 or number > 0:
+        total += number
+    else:
+        print(f"Total: {total}")
+        break
+# Alternative
+# total = 0
+# number = int(input("Enter a number: "))
+
+# while number != 0:
+#     total += number
+#     number = int(input("Enter a number: "))
+
+# print(f"Sum: {total}")
